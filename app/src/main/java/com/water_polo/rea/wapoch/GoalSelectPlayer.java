@@ -28,8 +28,8 @@ public class GoalSelectPlayer extends AppCompatActivity {
 
 
         this.radioGroupGoalSelectPlayer1_5 = (RadioGroup) findViewById(R.id.radioGroupGoalSelectPlayer1_5);
-        this.radioGroupGoalSelectPlayer6_10 = (RadioGroup) findViewById(R.id.radioGroupGoalSelectPlayer6_10);
-        this.radioGroupGoalSelectPlayer11_15 = (RadioGroup) findViewById(R.id.radioGroupGoalSelectPlayer11_15);
+        //this.radioGroupGoalSelectPlayer6_10 = (RadioGroup) findViewById(R.id.radioGroupGoalSelectPlayer6_10);
+        //this.radioGroupGoalSelectPlayer11_15 = (RadioGroup) findViewById(R.id.radioGroupGoalSelectPlayer11_15);
 
 
     }
@@ -37,7 +37,7 @@ public class GoalSelectPlayer extends AppCompatActivity {
     public void radioButtonGoalSelectPlayerOnClick(View view)
     {
             clearAllOtherGoalRadioGroups(view);
-            goalSelectedPlayer = view.getTextAlignment();
+            //goalSelectedPlayer = view.getTextAlignment();
     }
 
     private void clearAllOtherGoalRadioGroups(View view)
@@ -59,11 +59,12 @@ public class GoalSelectPlayer extends AppCompatActivity {
         }
     }
 
-
+/*
     public void sendInputBack() {
         this.selectedPlayer.putExtra("scorer", this.scorer);
         this.selectedPlayer.putExtra("goalType", this.goalType);
         setResult(-1, this.selectedPlayer);
         finish();
     }
+    */
 }
