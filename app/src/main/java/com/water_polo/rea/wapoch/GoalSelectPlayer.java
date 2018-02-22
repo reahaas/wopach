@@ -37,7 +37,7 @@ public class GoalSelectPlayer extends AppCompatActivity {
     public void radioButtonGoalSelectPlayerOnClick(View view)
     {
             clearAllOtherGoalRadioGroups(view);
-            goalSelectedPlayer = view.getTextAlignment();
+            //goalSelectedPlayer = view.getTextAlignment();
     }
 
     private void clearAllOtherGoalRadioGroups(View view)
@@ -59,11 +59,13 @@ public class GoalSelectPlayer extends AppCompatActivity {
         }
     }
 
-
+/*
     public void sendInputBack() {
         this.selectedPlayer.putExtra("scorer", this.scorer);
         this.selectedPlayer.putExtra("goalType", this.goalType);
         setResult(-1, this.selectedPlayer);
         finish();
     }
+
+    */
 }
