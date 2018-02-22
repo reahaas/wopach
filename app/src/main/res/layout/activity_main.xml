@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00aaff"
+    android:orientation="vertical"
+    tools:context="com.water_polo.rea.wapoch.MainActivity">
+
+    <!-- first row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <Button
+            android:id="@+id/buttonStatistics"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/holdstheball"
+            android:onClick="onClick"
+
+            />
+
+        <TextView
+            android:id="@+id/textViewPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="20dp"
+            android:text="period:1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- holds the ball container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/textViewHoldsTheBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Holds the ball:"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            />
+
+<!--
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/buttonGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="guest"
+            android:textSize="20sp"
+            />
+-->
+
+
+        <RadioGroup
+            android:id="@+id/radioGroupHoldsTheBall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radioButtonHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="5dp"
+                android:text="home  "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@android:color/white"
+                android:onClick="onClickRadioButtonHoldsTheBall"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButtonGuest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="guest  "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:onClick="onClickRadioButtonHoldsTheBall"
+                />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <!-- main buttons container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_margin="10dp"
+                android:text="Pass"
+                android:onClick="onClick"
+                />
+
+            <Button
+                android:id="@+id/buttonFoul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_margin="10dp"
+                android:onClick="onClick"
+                android:text="Foul" />
+
+            <Button
+                android:id="@+id/buttonLost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_margin="10dp"
+                android:onClick="onClick"
+                android:text="Lost" />
+
+
+        </TableRow>
+
+
+
+    </LinearLayout>
+
+    <!-- clocks container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- exclusion clock container -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textViewExclusionRun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Exclusion"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                 />
+
+            <TextView
+                android:id="@+id/textViewExclosionTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="00:20"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <!-- main clock container -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:padding="@dimen/default_gap"
+            android:background="@android:color/holo_blue_bright"
+
+
+            >
+
+            <Button
+                android:id="@+id/buttonGameRun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Run"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="#00ff00"
+                android:onClick="onClick"
+                android:longClickable="true"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewGameTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="08:00"
+                android:textSize="40sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:gravity="center"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textViewHomeScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewGuest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Guest"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/textViewGuestScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- shot clock container -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewShotRun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="Shot"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/textViewShotTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="30.0"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <!--
+        <ImageButton
+
+            android:id="@+id/buttonExclusion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_margin="10dp"
+            android:text="Exlusion"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:scaleType="fitXY"
+            android:background="@drawable/exclusion_image"
+
+            android:onClick="onClick"
+
+
+            />
+        -->
+
+        <Button
+            android:id="@+id/buttonExclusion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_margin="10dp"
+            android:text="Exlusion"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/exclusion_image"
+
+            android:onClick="onClick"
+            />
+
+
+        <Button
+            android:id="@+id/buttonThrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:onClick="onClick"
+            android:text="Throw" />
+
+
+
+        <Button
+            android:id="@+id/buttonGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:layout_margin="10dp"
+            android:text="Goal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+
+            android:onClick="onClick"
+            />
+
+    </TableRow>
+
+
+</android.widget.LinearLayout>
+
+

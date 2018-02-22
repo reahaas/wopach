@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eada4c"
+    tools:context="com.water_polo.rea.wapoch.SetGameTime">
+
+    <TextView
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set the time"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+
+        />
+    <LinearLayout
+        android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:orientation="horizontal"
+        >
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+
+
+        android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+
+        >
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="minuts"
+            android:textSize="20sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold"
+
+            />
+
+        <RadioGroup android:layout_gravity="center" android:id="@+id/radioGroupMinutes" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radioButtonMinute0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" android:onClick="radioButtonMinutesOnClick" />
+            <RadioButton android:id="@+id/radioButtonMinute1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_weight="1.0" android:onClick="radioButtonMinutesOnClick" />
+            <RadioButton android:id="@+id/radioButtonMinute2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:layout_weight="1.0" android:onClick="radioButtonMinutesOnClick" />
+            <RadioButton android:id="@+id/radioButtonMinute3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:layout_weight="1.0" android:onClick="radioButtonMinutesOnClick" />
+            <RadioButton android:id="@+id/radioButtonMinute4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:layout_weight="1.0" android:onClick="radioButtonMinutesOnClick" />
+            <RadioButton android:id="@+id/radioButtonMinute5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_weight="1.0" android:onClick="radioButtonMinutesOnClick" />
+            <RadioButton android:id="@+id/radioButtonMinute6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:layout_weight="1.0" android:onClick="radioButtonMinutesOnClick" />
+            <RadioButton android:id="@+id/radioButtonMinute7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" android:layout_weight="1.0" android:onClick="radioButtonMinutesOnClick" />
+            <RadioButton android:id="@+id/radioButtonMinute8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" android:layout_weight="1.0" android:onClick="radioButtonMinutesOnClick" />
+        </RadioGroup>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="tenths"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="bold"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupTenths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radioButtonTenths0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:onClick="radioButtonTenthsOnClick"
+                        android:text="0" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonTenths1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:onClick="radioButtonTenthsOnClick"
+                        android:text="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonTenths2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:onClick="radioButtonTenthsOnClick"
+                        android:text="2" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonTenths3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:onClick="radioButtonTenthsOnClick"
+                        android:text="3" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonTenths4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:onClick="radioButtonTenthsOnClick"
+                        android:text="4" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonTenths5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:onClick="radioButtonTenthsOnClick"
+                        android:text="5" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textViewGameTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="20dp"
+                    android:text="00:00"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="0.33">
+            <TextView android:textSize="20sp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="seconds"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                />
+            <RadioGroup android:layout_gravity="center" android:id="@+id/radioGroupSeconds" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RadioButton android:id="@+id/radioButtonSeconds0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+                <RadioButton android:id="@+id/radioButtonSeconds1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+                <RadioButton android:id="@+id/radioButtonSeconds2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+                <RadioButton android:id="@+id/radioButtonSeconds3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+                <RadioButton android:id="@+id/radioButtonSeconds4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+                <RadioButton android:id="@+id/radioButtonSeconds5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+                <RadioButton android:id="@+id/radioButtonSeconds6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+                <RadioButton android:id="@+id/radioButtonSeconds7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+                <RadioButton android:id="@+id/radioButtonSeconds8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+                <RadioButton android:id="@+id/radioButtonSeconds9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9" android:layout_weight="1.0" android:onClick="radioButtonSecondsOnClick" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:orientation="horizontal"
+        >
+    <Button android:textSize="30sp" android:layout_gravity="center" android:id="@+id/buttonMinus1TimeGame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-1 sec" android:layout_weight="0.25" android:onClick="buttonSecOnClick" />
+    <Button
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:id="@+id/buttonOkSetTimeGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK set"
+        android:layout_weight="0.5"
+        android:onClick="buttonSecOnClick" />
+
+    <Button android:textSize="30sp" android:layout_gravity="center" android:id="@+id/buttonPlus1TimeGame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1 sec" android:layout_weight="0.25" android:onClick="buttonSecOnClick" />
+    </LinearLayout>
+
+
+</LinearLayout>
